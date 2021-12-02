@@ -1,0 +1,39 @@
+{
+    "name": "gritsay-andriy/rest-api-responses-laravel",
+    "type": "library",
+    "description": "Rest api for laravel",
+    "version": "1.0",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "RestApiResponses": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RestApiResponses\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Gritsay Andriy",
+            "email": "gritsayandriy@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.23"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RestApiResponses\\Providers\\ServiceProvider"
+            ],
+            "aliases": {
+                "RestApiResponses": "RestApiResponses\\Facade"
+            }
+        }
+    }
+}
